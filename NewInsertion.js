@@ -16,3 +16,8 @@ array = [5, 3, 4, 2, 1];
 Insertion(array);
 
 //it still hangs in the console, keep checking up on this one...
+//it's fixed
+//made some dumb mistakes: incremented i in the j loop, 
+//just said "spliced = splic(i, 1)" instead of array.splice()
+//didn't return or log anything, and 
+//did if (i < j) instead of if (array[i] < array[j]);
