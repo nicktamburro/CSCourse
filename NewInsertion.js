@@ -7,7 +7,6 @@ for(let i = 1; i<array.length; i++){
 			array.splice(j, 0, spliced[0]);
 		}
 	}
-	
 }
 console.log(array);
 };

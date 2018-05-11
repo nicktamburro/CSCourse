@@ -20,3 +20,25 @@ function mergeSort(nums) {
 };
 
 //NEXT we have to find a way to stitch them back together IN ORDER, one piece at a time...
+//const merge = (left, right) = > {}
+function merge(left, right){
+
+//we make an array called results
+  const results[];
+
+//while there is something in both left and right
+  while(left.length && right.length){
+    //compare them
+    if (left[0] <= right[0]){
+      //put in the lower one first, at the beginning
+      results.push(left.shift());
+    }
+    else{
+      results.push(right.shift());
+    }
+  }
+  //if one side is empty, combine them
+  return results.concat(left, right);
+
+//that's it? 
+};
