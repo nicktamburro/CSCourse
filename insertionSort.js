@@ -1,5 +1,5 @@
 //1st line could also be:
-//
+//  
 //function insertionSort(nums){
 var insertionSort = nums => {  
 	//we start a loop on 1, because the first number is already "sorted"
