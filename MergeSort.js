@@ -24,10 +24,13 @@ function mergeSort(nums) {
 function merge(left, right){
 
 //we make an array called results
-  const results[];
+  const results = [];
+
 
 //while there is something in both left and right
   while(left.length && right.length){
+    //they're saying left is undefined...
+    
     //compare them
     if (left[0] <= right[0]){
       //put in the lower one first, at the beginning
@@ -38,7 +41,10 @@ function merge(left, right){
     }
   }
   //if one side is empty, combine them
-  return results.concat(left, right);
+  console.log(results.concat(left, right));
 
 //that's it? 
 };
+
+let numbers = [23, 2, 5, 3, 67, 8, 100, 1];
+mergeSort(numbers);
