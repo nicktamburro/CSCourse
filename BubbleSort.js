@@ -4,9 +4,12 @@ function bubbleSort (nums) {
 
   do{
     //go through all the numbers, if any are out of order, switch them:
-        for(i=0;i<nums.length;i++){
+        //for(i=0;i<nums.length;i++){
+          for(i=0;i<nums.length; i++){
           if(nums[i] > nums[i+1]){
+    //if the first one is bigger than the next one, switch them... 
           let t = nums[i];
+          //t = temporary, a placeholder to make the swap... 
           nums[i] = nums[i+1];
           nums[i+1] = t;
     //and then set swap to true, another swap has been made
