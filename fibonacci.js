@@ -7,8 +7,15 @@ for (i = 0; i<fibs.length; i++){
 	i++;
 
 	console.log(fibs);
+
+	if(fibs.length < 50){
+	FibPusher(fibs);
+}else{
+	console.log("done!");
+}
+
 }
 }
 
-
+//okay, yo I made this! now make it better
 FibPusher(fibs);
