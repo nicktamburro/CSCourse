@@ -1,21 +1,22 @@
 let fibs = [1, 2, 3];
+let count = 0;
 
 function FibPusher(fibs){
+
+do{
 for (i = 0; i<fibs.length; i++){
 	let newNum = fibs[fibs.length - 1] + fibs[fibs.length - 2];
 	fibs.push(newNum);
-	i++;
-
+	count++;
 	console.log(fibs);
-
-	if(fibs.length < 50){
+	console.log(count);
 	FibPusher(fibs);
-}else{
-	console.log("done!");
 }
+}while(count<50);
 
 }
-}
+
 
 //okay, yo I made this! now make it better
+//did it recursively now! but it's weird still
 FibPusher(fibs);
