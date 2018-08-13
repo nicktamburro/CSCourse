@@ -1,18 +1,24 @@
 let fibs = [1, 2, 3];
-let count = 0;
+
 
 function FibPusher(fibs){
+
+let count = 0;
 
 do{
 for (i = 0; i<fibs.length; i++){
 	let newNum = fibs[fibs.length - 1] + fibs[fibs.length - 2];
 	fibs.push(newNum);
-	count++;
 	console.log(fibs);
+	count+= 1;
 	console.log(count);
-	FibPusher(fibs);
+
+	//FibPusher(fibs);
+	
 }
-}while(count<50);
+}while(count < 10);
+
+
 
 }
 
