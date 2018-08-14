@@ -5,18 +5,22 @@ function FibPusher(fibs){
 
 let count = 0;
 
-do{
+//works...better... but okay, no, fix it more... 
+
 for (i = 0; i<fibs.length; i++){
+
+	if(fibs[i] < 1000){
 	let newNum = fibs[fibs.length - 1] + fibs[fibs.length - 2];
 	fibs.push(newNum);
 	console.log(fibs);
 	count+= 1;
 	console.log(count);
-
-	//FibPusher(fibs);
+}else{
+	console.log("done!");
+}
 	
 }
-}while(count < 10);
+
 
 
 
