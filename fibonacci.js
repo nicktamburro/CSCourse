@@ -9,7 +9,7 @@ let count = 0;
 
 for (i = 0; i<fibs.length; i++){
 
-	if(fibs[i] < 1000){
+	if(fibs[fibs.length - 1] < 1000){
 	let newNum = fibs[fibs.length - 1] + fibs[fibs.length - 2];
 	fibs.push(newNum);
 	
@@ -21,8 +21,8 @@ for (i = 0; i<fibs.length; i++){
 	
 }
 console.log(fibs);
-//okay cool, but the fib numbers are going up to 4000.... so I don't know why it stops where it does
 
+//now it works!
 
 }
 
