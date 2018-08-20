@@ -14,7 +14,7 @@ for (i = 0; i<fibs.length; i++){
 	fibs.push(newNum);
 	
 	count+= 1;
-	console.log(count);
+	//console.log(count);
 }else{
 	console.log("done!");
 }
