@@ -13,14 +13,14 @@ for (i = 0; i<fibs.length; i++){
 	let newNum = fibs[fibs.length - 1] + fibs[fibs.length - 2];
 	fibs.push(newNum);
 	
-	count+= 1;
+	count++;
 	//console.log(count);
 }else{
-	console.log("done!");
+	//console.log("done!");
 }
 	
 }
-console.log(fibs);
+//console.log(fibs);
 
 //now it works!
 
@@ -29,4 +29,19 @@ console.log(fibs);
 
 //okay, yo I made this! now make it better
 //did it recursively now! but it's weird still
-FibPusher(fibs);
+//FibPusher(fibs);
+
+//the one from the course was more like this:
+function FibPusher2(n){
+	if (n <=2){ 
+		return 1;
+	}
+	//if (n>1000) return;
+	else{
+	return FibPusher2(n-1) + FibPusher2(n-2);
+}
+};
+
+for (i=1; i<20; i++){
+	console.log(FibPusher2(i));
+}
