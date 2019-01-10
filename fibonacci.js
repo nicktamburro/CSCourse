@@ -20,7 +20,7 @@ for (i = 0; i<fibs.length; i++){
 }
 	
 }
-//console.log(fibs);
+console.log(fibs);
 
 //now it works!
 

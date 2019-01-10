@@ -2,6 +2,8 @@
 
 function mergeSort(nums) {
 	//if it's one, we're done breaking it down, so return it...
+  //also this is the first step for writing recursion, you have to give it a condition
+  //to STOP so it doesn't give us infinite loop / stack overflow
   if (nums.length < 2) {
     return nums;
   }
@@ -13,6 +15,7 @@ function mergeSort(nums) {
   const left = nums.slice(0, middle);
   //takes all the numbers for "middle" to the end
   const right = nums.slice(middle);
+  //prob could also say nums.slice(middle, nums[length - 1]);
   
   //then it takes the two arrays, and puts them back through, where
   //they get broken down further, until their length is <2
@@ -47,4 +50,5 @@ function merge(left, right){
 };
 
 let numbers = [23, 2, 5, 3, 67, 8, 100, 1];
+let more = [-1, 0.1, 10, 101, -100];
 mergeSort(numbers);

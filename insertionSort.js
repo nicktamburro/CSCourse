@@ -27,3 +27,43 @@ var insertionSort = nums => {
 
 array = [2, 4, 3, 5, 1, 7, 9, 8];
 insertionSort(array);
+
+//okay just trying to write it again
+
+function insertionSort2(nums){
+  for(i=1; i<nums.length; i++){
+
+    for(j=0; j<i; j++){
+      if(nums[i] < nums[j]){
+        let spliced = nums.splice(i, 1);
+        nums.spice(j, 0, spliced[0]);
+      }
+    }
+  }
+  console.log("insertion sort 2 gives us: " + nums);
+  //return nums;
+};
+
+insertionSort2(array);
+
+//just trying to write it from memory now:
+function insertionSort3(nums){
+  for(i=1; i<nums.length; i++){
+    for(j=0; j<i; j++){
+
+      if(i<j){
+        let spliced = nums.spice(i, 1);
+        nums.splice(j, 0, spliced[0]);
+      }
+    }
+  }
+  return nums;
+};
+
+/*
+let spliced = nums.splice(i, 1);
+nums.splice(j, 0, spliced[0]);
+let spliced = nums.splice(i, 1);
+nums.splice(j, 0, spliced[0]);
+let spliced = nums.splice(i, 1);
+nums.splice(j, 0, splice[0]);
